@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', 'IranNastaliq', 'Noto Nastaliq Urdu', 'Gulzar', Georgia, serif;
+    --font-script: 'Alex Brush', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-persian-active: 'IranNastaliq', 'Iran Nastaliq', 'Noto Nastaliq Urdu', 'Gulzar', serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', 'IranNastaliq', 'Noto Nastaliq Urdu', 'Gulzar', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Digits in Persian text: never inherit Nastaliq / calligraphy fonts */
+.font-address-digit {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+  letter-spacing: normal !important;
+  line-height: 1 !important;
+  font-style: normal !important;
+}
+
+/* Dedicated Persian Typography Classes */
+.font-persian {
+  font-family: var(--font-persian-active, 'IranNastaliq', 'Noto Nastaliq Urdu', serif) !important;
+  letter-spacing: normal !important;
+  line-height: var(--persian-line-height, 2.25) !important;
+}
+
+.font-nastaliq {
+  font-family: 'IranNastaliq', 'Iran Nastaliq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  letter-spacing: normal !important;
+  line-height: 2.35 !important;
+}
+
+/* 20 Curated Persian Font Families */
+[data-persian-font="nastaliq"],
+[data-persian-font=""] {
+  --font-persian-active: 'IranNastaliq', 'Iran Nastaliq', 'Noto Nastaliq Urdu', 'Gulzar', serif;
+  --persian-line-height: 2.3;
+}
+
+[data-persian-font="vazirmatn"] {
+  --font-persian-active: 'Vazirmatn', sans-serif;
+  --persian-line-height: 1.85;
+}
+
+[data-persian-font="amiri"] {
+  --font-persian-active: 'Amiri', serif;
+  --persian-line-height: 2.0;
+}
+
+[data-persian-font="katibeh"] {
+  --font-persian-active: 'Katibeh', cursive, serif;
+  --persian-line-height: 2.1;
+}
+
+[data-persian-font="arefruqaa"] {
+  --font-persian-active: 'Aref Ruqaa', cursive, serif;
+  --persian-line-height: 2.1;
+}
+
+[data-persian-font="lalezar"] {
+  --font-persian-active: 'Lalezar', cursive, sans-serif;
+  --persian-line-height: 1.9;
+}
+
+[data-persian-font="elmessiri"] {
+  --font-persian-active: 'El Messiri', sans-serif;
+  --persian-line-height: 1.95;
+}
+
+[data-persian-font="gulzar"] {
+  --font-persian-active: 'Gulzar', serif;
+  --persian-line-height: 2.2;
+}
+
+[data-persian-font="lateef"] {
+  --font-persian-active: 'Lateef', cursive, serif;
+  --persian-line-height: 2.1;
+}
+
+[data-persian-font="mirza"] {
+  --font-persian-active: 'Mirza', cursive, serif;
+  --persian-line-height: 2.1;
+}
+
+[data-persian-font="markazitext"] {
+  --font-persian-active: 'Markazi Text', serif;
+  --persian-line-height: 1.95;
+}
+
+[data-persian-font="scheherazade"] {
+  --font-persian-active: 'Scheherazade New', serif;
+  --persian-line-height: 2.1;
+}
+
+[data-persian-font="harmattan"] {
+  --font-persian-active: 'Harmattan', sans-serif;
+  --persian-line-height: 2.0;
+}
+
+[data-persian-font="reemkufi"] {
+  --font-persian-active: 'Reem Kufi', sans-serif;
+  --persian-line-height: 1.9;
+}
+
+[data-persian-font="cairo"] {
+  --font-persian-active: 'Cairo', sans-serif;
+  --persian-line-height: 1.85;
+}
+
+[data-persian-font="mada"] {
+  --font-persian-active: 'Mada', sans-serif;
+  --persian-line-height: 1.9;
+}
+
+[data-persian-font="notoserif"] {
+  --font-persian-active: 'Noto Serif Arabic', serif;
+  --persian-line-height: 2.0;
+}
+
+[data-persian-font="notosans"] {
+  --font-persian-active: 'Noto Sans Arabic', sans-serif;
+  --persian-line-height: 1.85;
+}
+
+[data-persian-font="almarai"] {
+  --font-persian-active: 'Almarai', sans-serif;
+  --persian-line-height: 1.85;
+}
+
+[data-persian-font="rakkas"] {
+  --font-persian-active: 'Rakkas', cursive, serif;
+  --persian-line-height: 2.05;
+}
+
+/* Shimmer animations for dress pearls and gold foil */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF5D6 50%, #B38F2C 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 4s infinite linear;
+}
+
+/* Floating veil breeze keyframe */
+@keyframes veilFlutter {
+  0%, 100% {
+    transform: rotate(0deg) skewX(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotate(1.5deg) skewX(2deg) translateY(-4px);
+  }
+  50% {
+    transform: rotate(-1deg) skewX(-1.5deg) translateY(3px);
+  }
+  75% {
+    transform: rotate(2deg) skewX(1deg) translateY(-2px);
+  }
+}
+
+.animate-veil {
+  animation: veilFlutter 7s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* Petal float */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}

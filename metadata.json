@@ -1,0 +1,6 @@
+{
+  "name": "Aura Bridal Wedding Invitation",
+  "description": "کارت دعوت اختصاصی جشن عقد پریا و محسن - جمعه ۳ مهر ۱۴۰۵ در خانه عقد آوین",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
