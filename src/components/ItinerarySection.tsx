@@ -51,7 +51,7 @@ export default function ItinerarySection({ weddingDate }: ItinerarySectionProps)
           </div>
 
           <h2 className="font-persian text-3xl min-[360px]:text-4xl sm:text-5xl text-[#2B231D] tracking-tight mb-3 px-2 font-bold">
-            برنامه زمانی جشن عقد
+            برنامه زمانی عقد
           </h2>
 
           <p className="font-persian text-base sm:text-xl text-[#736357] px-2 leading-relaxed">

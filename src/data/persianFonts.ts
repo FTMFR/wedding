@@ -7,7 +7,7 @@ export const PERSIAN_FONTS: PersianFontOption[] = [
     category: 'عروس خطوط ایرانی',
     cssFamily: "'IranNastaliq', 'Iran Nastaliq', 'Noto Nastaliq Urdu', 'Gulzar', serif",
     previewText: 'پریا و محسن • تو نوبرانه یک عمر انتظار منی',
-    description: 'شاهکار خوشنویسی سنتی ایرانی و اصیل‌ترین انتخاب برای جشن عقد',
+    description: 'شاهکار خوشنویسی سنتی ایرانی و اصیل‌ترین انتخاب برای عقد',
   },
   {
     id: 'vazirmatn',

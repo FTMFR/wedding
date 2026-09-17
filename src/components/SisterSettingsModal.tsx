@@ -117,7 +117,7 @@ export default function SisterSettingsModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs uppercase tracking-wider text-[#68574B] font-semibold mb-1">
-                  تاریخ شمسی جشن عقد (Shamsi Date) *
+                  تاریخ شمسی عقد (Shamsi Date) *
                 </label>
                 <input
                   type="text"

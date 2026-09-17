@@ -4,8 +4,8 @@ import { WeddingConfig } from '../types';
 import { triggerWeddingPetals } from '../utils/confettiEffects';
 
 const HERO_IMAGE = {
-  url: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=85',
-  title: 'حلقه‌های عقد روی روبان ابریشمی نود و گل‌های بژ',
+  url: '/card.jpeg',
+  title: 'حلقه‌های عقد روی گل‌های صورتی',
 };
 
 const VENUE_ADDRESS_PREFIX = 'خیابان جابرانصاری،بین کوچه ';
@@ -65,14 +65,13 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
           </div>
 
           <section
-            aria-label="عکس تم نود و شامپاینی جشن عقد"
+            aria-label="عکس تم نود و شامپاینی عقد"
             className="my-3 sm:my-6 relative w-full max-w-2xl mx-auto rounded-xl sm:rounded-2xl overflow-hidden shadow-sm border border-[#E8DCCF] group bg-[#FAF6F0]"
           >
             <div className="aspect-[16/10] sm:aspect-[2.1/1] w-full relative overflow-hidden">
               <img
                 src={HERO_IMAGE.url}
                 alt={HERO_IMAGE.title}
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700 brightness-[1.02] contrast-[1.02]"
                 loading="eager"
               />
@@ -105,7 +104,7 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
           </div>
 
           <section
-            aria-label="اطلاعات زمان جشن عقد"
+            aria-label="اطلاعات زمان عقد"
             dir="rtl"
             className="w-full max-w-2xl mx-auto my-5 sm:my-8 text-right"
           >
@@ -115,9 +114,6 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
                   <Calendar className="w-5 h-5 sm:w-7 sm:h-7" />
                 </div>
                 <div className="min-w-0">
-                  <span className="block text-xs sm:text-sm text-[#8C7A6D] font-medium font-persian mb-0.5">
-                    جشن عقد
-                  </span>
                   <span
                     dir="rtl"
                     className="block font-persian text-xl sm:text-3xl font-bold text-[#382F28] leading-snug"

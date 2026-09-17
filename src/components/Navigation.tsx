@@ -96,7 +96,7 @@ export default function Navigation({ config, onOpenEnvelope, onOpenSettings, act
               {config.coupleMonogram || 'P & M'}
             </span>
             <span className="block text-xs sm:text-sm text-[#8A7E74] font-persian leading-tight">
-              جشن عقد و پیوند عاشقانه‌مان
+              عقد و پیوند عاشقانه‌مان
             </span>
           </div>
         </a>
@@ -219,7 +219,7 @@ export default function Navigation({ config, onOpenEnvelope, onOpenSettings, act
                     {config.coupleMonogram || 'P & M'}
                   </div>
                   <span className="font-persian text-sm sm:text-base font-semibold text-[#4A3D33]">
-                    فهرست بخش‌های دعوتنامه جشن عقد
+                    فهرست بخش‌های دعوتنامه عقد
                   </span>
                 </div>
                 <button
@@ -279,7 +279,7 @@ export default function Navigation({ config, onOpenEnvelope, onOpenSettings, act
                   className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#F0E6D8] text-[#5A4B40] text-sm font-medium font-persian min-h-[44px] touch-manipulation"
                 >
                   <Settings className="w-4 h-4 text-[#8C6D37]" />
-                  <span>تنظیم نام‌ها و جزئیات جشن عقد (Sister Customizer)</span>
+                  <span>تنظیم نام‌ها و جزئیات عقد (Sister Customizer)</span>
                 </button>
               </div>
             </div>

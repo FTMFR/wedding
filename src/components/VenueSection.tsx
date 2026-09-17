@@ -23,7 +23,7 @@ export default function VenueSection({ config }: VenueSectionProps) {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-[#E3D6C5] mb-4 shadow-xs">
             <MapPin className="w-4 h-4 text-[#8C6D37]" />
             <span className="text-xs font-semibold text-[#7A6342] font-persian">
-              محل برگزاری جشن عقد
+              محل برگزاری عقد
             </span>
           </div>
 

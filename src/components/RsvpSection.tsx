@@ -101,7 +101,7 @@ export default function RsvpSection({ config }: RsvpSectionProps) {
           </div>
 
           <h2 className="font-persian text-3xl min-[360px]:text-4xl sm:text-5xl text-[#2B231D] tracking-tight mb-3 px-2 font-bold">
-            اعلام حضور در جشن عقد (RSVP)
+            اعلام حضور در عقد (RSVP)
           </h2>
 
           <p className="font-persian text-base sm:text-xl text-[#756557] px-2 leading-relaxed">

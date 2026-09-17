@@ -119,7 +119,7 @@ export default function HeroSection({ config, onExploreDress, onOpenEnvelope }: 
         >
           <Sparkles className="w-4 h-4 text-[#8C6D37] shrink-0" />
           <span className="text-xs sm:text-sm md:text-base text-[#7A6342] font-medium font-persian">
-            دعوتنامه‌ای ویژه برای جشن عقد &bull; {config.coupleMonogram || 'P & M'}
+            دعوتنامه‌ای ویژه برای عقد &bull; {config.coupleMonogram || 'P & M'}
           </span>
         </motion.div>
 
