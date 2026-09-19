@@ -146,21 +146,29 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
             className="w-full max-w-2xl mx-auto mt-1 mb-1 sm:mb-4 text-right"
           >
             <div className="rounded-xl sm:rounded-2xl bg-[#FAF6F0] border border-[#EFE5D8] overflow-hidden shadow-xs">
-              <div className="p-3.5 sm:p-5 flex items-start gap-3 sm:gap-4">
-                <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-[#EDE3D3] flex items-center justify-center shrink-0 text-[#8C6D37] shadow-inner">
-                  <MapPin className="w-5 h-5 sm:w-7 sm:h-7" />
+              <div className="p-3.5 sm:p-5 flex flex-col gap-3.5 sm:gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-start gap-3 sm:gap-4 min-w-0">
+                  <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-[#EDE3D3] flex items-center justify-center shrink-0 text-[#8C6D37] shadow-inner">
+                    <MapPin className="w-5 h-5 sm:w-7 sm:h-7" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <span
+                      dir="rtl"
+                      className="block font-persian text-base sm:text-2xl font-bold text-[#382F28] leading-relaxed break-words"
+                    >
+                      {VENUE_ADDRESS_PREFIX}
+                      <bdi className="font-address-digit font-semibold">۷</bdi>
+                      {VENUE_ADDRESS_SUFFIX}
+                      <bdi className="font-address-digit font-semibold">۹</bdi>
+                      {VENUE_ADDRESS_END}
+                    </span>
+                  </div>
                 </div>
-                <div className="min-w-0 flex-1">
-                  <span
-                    dir="rtl"
-                    className="block font-persian text-base sm:text-2xl font-bold text-[#382F28] leading-relaxed break-words"
-                  >
-                    {VENUE_ADDRESS_PREFIX}
-                    <bdi className="font-address-digit font-semibold">۷</bdi>
-                    {VENUE_ADDRESS_SUFFIX}
-                    <bdi className="font-address-digit font-semibold">۹</bdi>
-                    {VENUE_ADDRESS_END}
-                  </span>
+
+                <div className="flex items-center pr-14 sm:pr-0">
+                  <div className="inline-flex items-center px-3 py-1.5 rounded-xl bg-[#EFE4D6] text-sm sm:text-base font-persian text-[#6B5034] font-semibold border border-[#DFCBB5] whitespace-nowrap">
+                    به صرف شام و شیرینی
+                  </div>
                 </div>
               </div>
 
