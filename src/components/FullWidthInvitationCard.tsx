@@ -146,7 +146,7 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
             className="w-full max-w-2xl mx-auto mt-1 mb-1 sm:mb-4 text-right"
           >
             <div className="rounded-xl sm:rounded-2xl bg-[#FAF6F0] border border-[#EFE5D8] overflow-hidden shadow-xs">
-              <div className="p-3.5 sm:p-5 flex flex-col gap-3.5 sm:gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div className="p-3.5 sm:p-5 flex flex-col gap-3.5 sm:gap-4">
                 <div className="flex items-start gap-3 sm:gap-4 min-w-0">
                   <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-[#EDE3D3] flex items-center justify-center shrink-0 text-[#8C6D37] shadow-inner">
                     <MapPin className="w-5 h-5 sm:w-7 sm:h-7" />
@@ -165,10 +165,17 @@ export default function FullWidthInvitationCard(_props: FullWidthInvitationCardP
                   </div>
                 </div>
 
-                <div className="flex items-center pr-14 sm:pr-0">
-                  <div className="inline-flex items-center px-3 py-1.5 rounded-xl bg-[#EFE4D6] text-sm sm:text-base font-persian text-[#6B5034] font-semibold border border-[#DFCBB5] whitespace-nowrap">
-                    به صرف شام و شیرینی
-                  </div>
+                <div
+                  dir="rtl"
+                  className="w-full px-3 py-2.5 sm:px-4 sm:py-3 rounded-xl bg-[#EFE4D6] text-xs min-[380px]:text-sm sm:text-base font-persian text-[#6B5034] font-semibold border border-[#DFCBB5] leading-relaxed text-right break-words"
+                >
+                  ساعت{' '}
+                  <bdi className="font-address-digit font-semibold">۱۹:۳۰</bdi>
+                  {' '}
+                  به صرف شام، رستوران VIP سیتی سنتر.
+                  <br className="sm:hidden" />
+                  {' '}
+                  در صورتی که افتخار میزبانی شما را نداریم، لطفا اطلاع دهید.
                 </div>
               </div>
 
